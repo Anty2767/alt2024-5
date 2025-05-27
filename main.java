@@ -13,6 +13,10 @@ class Main{
         // Usa il metodo Integer.toOctalString per ottenere la rappresentazione ottale
         return Integer.toOctalString(numero);
     }
+    public static String convertiInEsadecimale(int numero) {
+        return Integer.toHexString(numero).toUpperCase();
+    }
+
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
     boolean conversione=false;//flag che controlla che la conversione sia corretta
