@@ -9,10 +9,28 @@ class Main{
         System.out.println(dividi(dato1,dato2));
     }
 
+<<<<<<< HEAD
     public static double sottrai(double a, double b) {
             return a - b;
     }
     
+=======
+    public double dividi(double dividendo, double divisore) {
+	
+      try{
+        if(divisore==0) {
+          if(dividendo>0) return Double.POSITIVE_INFINITY;
+          else return Double.NEGATIVE_INFINITY;
+        } else {
+          double risultato = dividendo/divisore;
+          return risultato;
+        }
+      } catch (Exception e) {
+        return 0;
+      }
+      
+    }
+>>>>>>> dcef5af40aed41fdd835f42aba7597e1ce59f42c
 
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
