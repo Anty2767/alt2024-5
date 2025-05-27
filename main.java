@@ -4,17 +4,14 @@ class Main{
     public static void main(String args[]){
         double dato1=leggiDouble("inserisci 1^ numero");
         double dato2=leggiDouble("inserisci 2^ numero");
-        System.out.println(sottrai(dato1,dato2));
+        System.out.println(Sottrai.sottrai(dato1,dato2));
         System.out.println(addizione(dato1,dato2));
-        System.out.println(dividi(dato1,dato2));
+        System.out.println(Divisione.dividi(dato1,dato2));
+        System.out.println(Moltiplica.moltiplica(dato1,dato2));
     }
 
     public static double addizione(double a, double b){
         return a+b;
-    }
-
-    public static double sottrai(double a, double b) {
-            return a - b;
     }
     
     public static double leggiDouble(String domanda){//leggi intero POSITIVO

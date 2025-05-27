@@ -1,4 +1,4 @@
-public class divisione {
+public class Divisione {
     public static double dividi(double dividendo, double divisore) {
 	
       try{
