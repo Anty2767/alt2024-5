@@ -10,6 +10,10 @@ class Main{
         System.out.println(Moltiplica.moltiplica(dato1,dato2));
     }
     
+    public static String convertiInEsadecimale(int numero) {
+        return Integer.toHexString(numero).toUpperCase();
+    }
+
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
     boolean conversione=false;//flag che controlla che la conversione sia corretta
