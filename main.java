@@ -17,22 +17,6 @@ class Main{
             return a - b;
     }
     
-    public static double dividi(double dividendo, double divisore) {
-	
-      try{
-        if(divisore==0) {
-          if(dividendo>0) return Double.POSITIVE_INFINITY;
-          else return Double.NEGATIVE_INFINITY;
-        } else {
-          double risultato = dividendo/divisore;
-          return risultato;
-        }
-      } catch (Exception e) {
-        return 0;
-      }
-      
-    }
-    
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
     boolean conversione=false;//flag che controlla che la conversione sia corretta
