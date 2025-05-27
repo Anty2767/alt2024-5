@@ -9,7 +9,10 @@ class Main{
         System.out.println(Divisione.dividi(dato1,dato2));
         System.out.println(Moltiplica.moltiplica(dato1,dato2));
     }
-    
+    public static String convertiInOttale(int numero) {
+        // Usa il metodo Integer.toOctalString per ottenere la rappresentazione ottale
+        return Integer.toOctalString(numero);
+    }
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
     boolean conversione=false;//flag che controlla che la conversione sia corretta
