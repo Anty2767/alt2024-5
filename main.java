@@ -9,6 +9,11 @@ class Main{
         System.out.println(dividi(dato1,dato2));
     }
 
+    public static double sottrai(double a, double b) {
+            return a - b;
+    }
+    
+
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
     boolean conversione=false;//flag che controlla che la conversione sia corretta
