@@ -4,12 +4,55 @@ class Main{
     public static void main(String args[]){
         double dato1=leggiDouble("inserisci 1^ numero");
         double dato2=leggiDouble("inserisci 2^ numero");
-        System.out.println(Sottrai.sottrai(dato1,dato2));
-        System.out.println(Addizione.addizione(dato1,dato2));
-        System.out.println(Divisione.dividi(dato1,dato2));
-        System.out.println(Moltiplica.moltiplica(dato1,dato2));
+        System.out.println(sottrai(dato1,dato2));
+        System.out.println(addizione(dato1,dato2));
+        System.out.println(dividi(dato1,dato2));
+    }
+
+    public static double addizione(double a, double b){
+        return a+b;
+    }
+
+    public static double sottrai(double a, double b) {
+            return a - b;
     }
     
+    public static double dividi(double dividendo, double divisore) {
+	
+      try{
+        if(divisore==0) {
+          if(dividendo>0) return Double.POSITIVE_INFINITY;
+          else return Double.NEGATIVE_INFINITY;
+        } else {
+          double risultato = dividendo/divisore;
+          return risultato;
+        }
+      } catch (Exception e) {
+        return 0;
+      }
+      
+    }
+
+    public static String decimaleInBinario(int numero) {
+        if (numero == 0) {
+            return "0";
+        }
+
+        StringBuilder binario = new StringBuilder();
+
+        while (numero > 0) {
+            int resto = numero % 2;
+            binario.insert(0, resto); // Inserisce il bit all'inizio della stringa
+            numero = numero / 2;
+        }
+
+        return binario.toString();
+    }
+
+    // Metodo main per testare la funzione
+    
+    
+
     public static double leggiDouble(String domanda){//leggi intero POSITIVO
     double numeroInserito = 0;
     boolean conversione=false;//flag che controlla che la conversione sia corretta
