@@ -17,7 +17,7 @@ class Main{
             return a - b;
     }
     
-    public double dividi(double dividendo, double divisore) {
+    public static double dividi(double dividendo, double divisore) {
 	
       try{
         if(divisore==0) {
